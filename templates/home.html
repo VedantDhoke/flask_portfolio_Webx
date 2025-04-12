@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="section-heading">Welcome to My Portfolio</h1>
+
+<div class="profile-container">
+    <img src="{{ url_for('static', filename='mypic.jpg') }}" alt="My Photo" class="profile-pic">
+</div>
+
+<p class="home-intro">
+    Hi! I'm Vedant — a tech enthusiast who loves building full-stack apps, exploring cloud tech, and making ideas real.
+    👨‍💻
+    Feel free to explore my projects and drop a message!
+</p>
+{% endblock %}

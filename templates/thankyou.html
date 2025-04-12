@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="thankyou-container">
+    <h1>Thank You for Reaching Out! 🙏</h1>
+    <p>We’ve received your message and will get back to you shortly.</p>
+
+    <div class="submitted-details">
+        <h3>Your Submission:</h3>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Message:</strong> {{ message }}</p>
+    </div>
+
+    <a href="/" class="back-home-btn">Back to Home</a>
+</div>
+{% endblock %}

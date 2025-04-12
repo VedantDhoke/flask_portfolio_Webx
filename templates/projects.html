@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="section-heading">My Projects</h1>
+
+<div class="projects-container">
+    <div class="project-card">
+        <img src="{{ url_for('static', filename='book.png') }}" alt="BookXchanger">
+        <div class="project-details">
+            <h3>BookXchanger</h3>
+            <p>A platform to exchange books with other users easily, built using React and MongoDB.</p>
+            <a href="https://67be11805f1f4e6047b7b79a--imaginative-toffee-d8f721.netlify.app/" target="_blank" class="project-link">View Project</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="{{ url_for('static', filename='electro.png') }}" alt="ElectroMart">
+        <div class="project-details">
+            <h3>ElectroMart</h3>
+            <p>An e-commerce website for electronic items with real-time search and cart functionality.</p>
+            <a href="https://github.com/VedantDhoke/ElectroMart" target="_blank" class="project-link">View Project</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="{{ url_for('static', filename='port.png') }}" alt="Portfolio Website">
+        <div class="project-details">
+            <h3>Portfolio Website</h3>
+            <p>This personal portfolio you're seeing — responsive and built with Flask + HTML/CSS.</p>
+            <a href="https://github.com/VedantDhoke/Profile_page" target="_blank" class="project-link">View Project</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
