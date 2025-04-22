@@ -16,7 +16,8 @@ def contact():
         name = request.form["name"]
         email = request.form["email"]
         message = request.form["message"]
-        return render_template("thankyou.html", name=name, email=email, message=message)
+        subject = request.form["subject"]
+        return render_template("thankyou.html", name=name, email=email,subject=subject, message=message)
     return render_template("contact.html")
 
 if __name__ == "__main__":
